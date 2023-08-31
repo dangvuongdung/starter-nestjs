@@ -10,7 +10,8 @@ require('dotenv').config();
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
-
+  
+  console.log('BOT_TOKEN', process.env.BOT_TOKEN);
   if (process.env.NODE_ENV !== 'production') {
     const config = new DocumentBuilder()
       .setTitle('Docs')
