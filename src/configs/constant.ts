@@ -3,4 +3,5 @@ export default {
     version: '1.0',
     pathName: 'docs',
   },
+  GreeterBotName: 'greeter'
 };

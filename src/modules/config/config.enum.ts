@@ -1,4 +1,4 @@
 export enum ConfigKey {
-    TwitterId = 'twitter_id',
-    ZealyPage = 'zealy_page',
+  TwitterId = 'twitter_id',
+  ZealyPage = 'zealy_page',
 }

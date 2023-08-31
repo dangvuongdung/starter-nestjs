@@ -1,3 +1,3 @@
 export class ListConfigPayload {
-    constructor(readonly search?: string) {}
+  constructor(readonly search?: string) {}
 }
