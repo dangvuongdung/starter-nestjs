@@ -37,6 +37,8 @@ export class WalletService {
 
   @Command('wallet')
   async fetchWallet(ctx: Context) {
+
+    console.log('---------------wallet---------------')
     const wallets = await this.wallet.find({
       where: { telegram_id: ctx.message.from.id },
     });
@@ -55,6 +57,7 @@ export class WalletService {
 
   @Command('import')
   async import(ctx: Context) {
+    console.log('---------------import---------------')
     const mnemonic = await ethers.Wallet.createRandom().mnemonic
     const walet = ethers.Wallet.fromMnemonic(mnemonic.phrase)
 
